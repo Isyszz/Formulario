@@ -1,66 +1,82 @@
-* {
+* {  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-container {
-    background: white;
+    display: flex;
+    width: 100%;       
+}
+
+.container-direito{
+    height: 550px;
+    width: 34%;
     padding: 40px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 0 10px 10px 0;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
+   
 }
 
-.login-container h1 {
+.container-direito h1 {
     text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-top: 0;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.container-esquerdo {
+    height: 550px;
+    width: 25%;
+    padding: 40px;
+    margin-left: 20%;
+    background: linear-gradient(135deg, #0b30d4, #764ba2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.form-group label {
-    display: block;
+.form-group{
     margin-bottom: 8px;
-    color: #555;
-    font-weight: 500;
 }
 
 .form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 10px 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
     transition: border-color 0.3s;
 }
 
-.form-group input:focus {
-    outline: none;
-    border-color: #667eea;
-}
-
 .btn-login {
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
     padding: 12px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -75,15 +91,5 @@ body {
     text-align: center;
     margin-top: 20px;
     color: #777;
-    font-size: 14px;
-}
-
-.login-footer a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login-footer a:hover {
-    text-decoration: underline;
+    font-size: 15px;
 }
