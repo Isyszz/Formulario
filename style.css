@@ -94,3 +94,50 @@ body {
     color: #777;
     font-size: 15px;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding: 2rem 1rem;
+    }
+
+    .login-container {
+        flex-direction: column; /* empilha esquerdo e direito */
+        width: 100%;
+    }
+
+    .container-esquerdo {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 2rem;
+        border-radius: 10px 10px 0 0; /* arredonda só em cima */
+    }
+
+    .container-direito {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 10px 10px; /* arredonda só embaixo */
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container-esquerdo {
+        padding: 1.5rem;
+    }
+
+    .container-direito {
+        padding: 1.5rem;
+    }
+
+    .container-direito h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-login {
+        width: 100%; /* botão ocupa largura toda no celular */
+    }
+}
